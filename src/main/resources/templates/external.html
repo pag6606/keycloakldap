@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Portal de usuarios basado en thymeleaf </h1>
+    </div>
+    <div>
+        <p>Datos de prueba ejemplo que demuestra la integracion de varias tecnologias</p>
+        <li>Openldap</li>
+        <li>Keycloak</li>
+        <li>Springboot</li>
+
+        <h2>Acceso restringido</h2>
+        <div class="well">
+            <b>Ingresar: </b><a th:href="@{/customers}">clientes</a>
+        </div>
+    </div>
+    <div id="pagefoot" th:include="layout :: footerFragment">Footer
+    </div>
+</div>
+<!-- container -->
+
+</body>
+</html>
